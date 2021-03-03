@@ -9,11 +9,9 @@
 	<link rel="stylesheet" href="css/reset.css">	
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 	<link rel="stylesheet" href="css/responsivo.css">
 	<script>document.documentElement.classList.add("js");</script>
-
-
 
 
 </head>
@@ -27,60 +25,53 @@
 				<ul>
 					<li><a href="sobre.html">Sobre</a></li>	
 					<li><a href="produtos.html">Produtos</a></li>	
-					<li><a href="portfolio.html">Portfólio</a></li>	
-					<li><a href="contato.html" class="menu-ativo">Contato</a></li>	
+					<li><a href="portfolio.html" class="menu-ativo">Portfólio</a></li>	
+					<li><a href="contato.html">Contato</a></li>	
 				</ul>
 			</nav>
 		</div>
 	</header>
 
     
-	<section class="introducao-interna interna_contato">
+	<section class="introducao-interna interna_portfolio">
 		<div class="container">
-		<h1 data-anime="400" class="fadeInDown">Contato</h1>
-        <p data-anime="800" class="fadeInDown">tire suas duvidas com a gente</p>
+		<h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+        <p data-anime="800" class="fadeInDown">conheça os projetos que amamos mostrar</p>
 	</div>
 	</section>
-
 	
-
-	<section class="contato container fadeInDown" data-anime="1200">
-			<form id="form_orcamento" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
-				<label for="nome">Nome</label>
-				<input type="text" id="nome" name="nome" required>
-				<label for="email" >E-mail</label>
-				<input type="email" id="email" name="email" required>
-				<label for="telefone">Telefone</label>
-				<input type="text" id="telefone" name="telefone">
-
-				<label class="nao-aparece">Se você não é um robô, deixe em branco</label>
-				<input type="text" class="nao-aparece" name="leaveblank">
-				<label class="nao-aparece">Se você não é um robô, deixe em branco</label>
-				<input type="text" class="nao-aparece" name="dontchange" value="http://">
-
-				<label for="mensagem">Mensagem</label>
-				<textarea id="mensagem" name="mensagem" required></textarea>
-				<button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
-			</form>
-			<div class="contato_dados grid-8">
-				<h3>Dados</h3>
-				<span>+55 21 93223 3232</span>
-				<span>orcamento@bikcraft.com</span>
-				<span>Rua Ali Perto - Botafogo</span>
-				<span>Rio de Janeiro - RJ - Brasil</span>
-				<h3>Redes Socias</h3>
-				
-				<ul>
-					<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="facebook"></a></li>
-					<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="instagram"></a></li>
-					<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="twitter"></a></li>
-				</ul>
-			</div>
+	<section class="container fadeInDown" data-slide="quote" data-anime="1200">
+		<blockquote class="quote_clientes">
+			<p>“Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.”</p>
+			<cite>Barbara Moss</cite>
+		</blockquote>
+		<blockquote class="quote_clientes">
+			<p>“Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a minha companheira mais fiel, nunca me traiu e está sempre a minha disposição.”</p>
+				<cite>Jhony Rato</cite>
+		</blockquote>
+		<blockquote class="quote_clientes">
+			<p>“Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão perdendo. A precisão é absurda e a velocidade transcendental. Nunca vida nada igual.”</p>
+				<cite>Bernardo</cite>
+		</blockquote>
 	</section>
 
-   <section class="container contato_mapa">
-	   <a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
-   </section>
+	<section class="portfolio">
+		<div class="container" data-slide="portfolio">
+			<ul class="portfolio_lista">
+				<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro" >  </li>
+				<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" >  </li>
+				<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" >  </li>
+
+			</ul>
+			<ul class="portfolio_lista">
+				<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" >  </li>
+				<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro" >  </li>
+				<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" >  </li>
+
+			</ul>
+		</div>
+
+	</section>
 
         <section class="quebra">
 			
@@ -125,9 +116,10 @@
 			
 		</footer>
 
-		<script src="./js/simple-anime.js"></script>
-		<script src="./js/simple-form.js"></script>
-		<script src="./js/script.js"></script>
-    
+	<script src="./js/simple-anime.js"></script>
+	<script src="./js/simple-slide.js"></script>
+	<script src="./js/script.js"></script>
+
+
 </body>
 </html>
