@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsivo.css">
-	<script src="./js/script.js"></script>
+	<script>document.documentElement.classList.add("js");</script>
+
 
 	<title>Document</title>
 </head>
@@ -33,17 +34,17 @@
 
 	<section class="introducao">
 		<div class="container">
-		<h1>Bicicletas Feitas a Mão</h1>
-		<blockquote class="quote-externo">
+		<h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
+		<blockquote data-anime="800" class="fadeInDown quote-externo">
 			<p>"não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
 			<cite>WILLIAM MORRIS</cite>
 			
 		</blockquote>
-		<a href="produtos.html" class="btn">Orçamento</a>
+		<a href="produtos.html" data-anime="1200" class=" fadeInDown btn">Orçamento</a>
 	</div>
 	</section>
 
-		<section class="produtos container">
+		<section class="produtos container fadeInDown" data-anime="1600">
 			<h2 class="subtitulo">Produtos</h2>
 			<ul class="produtos_lista">
 
@@ -67,7 +68,7 @@
 					<div class="produtos_icone">
 						<img src="img/produtos/retro.svg" alt="Bikcraft Passeio">
 					</div>
-					<h3>Retro</h3>
+					<h3>Retrô</h3>
 					<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
 				</li>
 
@@ -123,7 +124,7 @@
 		<section class="quebra">
 			
 			<blockquote class="quote-externo container">
-				<p>"o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."</p>
+				<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
 				<cite>WILLIAM MORRIS</cite>
 				
 			</blockquote>
@@ -133,7 +134,7 @@
 			<div class="footer">
 				<div class="container">
 				<div class="grid-8 footer_historia">
-					<h3>Nossa Historia</h3>
+					<h3>Nossa História</h3>
 					<p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana cotidiana. interesse por todos os detalhes da vida cotidiana cotidiana.</p>
 
 				</div>
@@ -162,8 +163,10 @@
 			</div>
 			
 		</footer>
+		<script src="./js/simple-anime.js"></script>
 		<script src="./js/script.js"></script>
-		<script src="./js/simple-slide.js"></script>
+
+
 </body>
 
 </html>
