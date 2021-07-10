@@ -11,3 +11,5 @@ WordPress como CMS: Em andamento.
 CSS Flexbox: Completo.
 
 Javascript Completo ES6: Completo
+
+React Completo: Em andamento.
