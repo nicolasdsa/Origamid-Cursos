@@ -13,3 +13,5 @@ CSS Flexbox: Completo.
 Javascript Completo ES6: Completo
 
 React Completo: Em andamento.
+
+CSS Avançado Posicionamento: Em andamento
