@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 1</title>
+  <script src="./redux.min.js"></script>
+  <script src="./immer.umd.production.min.js"></script>
+</head>
+<body>
+<h1 id="aluno"></h1>
+<h1 id="aulas"></h1>
+
+<script type="module">
+  import { incrementar, reduzir, modificar } from './store/aluno.js';
+  import { completar_aula, completar_curso, resetar } from './store/aulas.js';
+
+  import store from './store/configureStore.js';
+
+  function render() {
+    const { aulas, aluno } = store.getState();
+    const aulasGet = document.getElementById('aulas');
+    const alunoGet = document.getElementById('aluno');
+    aulasGet.innerText = aulas.filter((a) => a.completa === true).length;
+    alunoGet.innerText = `${aluno.nome} : ${aluno.email} : ${aluno.diasRestantes}`;
+  }
+  render();
+  store.subscribe(render);
+
+  store.dispatch(resetar());
+  store.dispatch(completar_aula(4));
+  store.dispatch(completar_curso());
+  store.dispatch(reduzir());
+  store.dispatch(incrementar());
+  store.dispatch(modificar('nicolas@origamid.com'));
+
+</script>
+</body>
+</html>
